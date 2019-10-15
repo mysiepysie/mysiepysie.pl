@@ -24,6 +24,7 @@ execute( 'git add .', 'public' );
 execute( `git commit -m "${ getCommitName() }"`, 'public' );
 execute( `git push origin master`, 'public' );
 
+execute( 'git pull' );
 execute( 'git add .' );
 execute( `git commit -m "${ getCommitName() }"` );
 execute( `git push origin master` );
