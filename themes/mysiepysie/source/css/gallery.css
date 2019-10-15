@@ -1,0 +1,149 @@
+body {
+	padding: 20px 0 0;
+	background-color: var( --yellow-light );
+	margin: 0;
+}
+
+h1, h2 {
+	font-family: 'Quicksand', sans-serif;
+	color: var( --pink-dark );
+	font-weight: 500;
+}
+
+p, a {
+	font-family: 'Quicksand', sans-serif;
+	color: var( --text-grey );
+	font-weight: 400;
+}
+
+nav {
+	position: absolute;
+	right: 20px;
+	z-index: 1;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 36px;
+	padding: 0 20px;
+	margin: 40px 0 20px;
+	text-align: center;
+}
+
+@media( max-width: 466px ) {
+	h1 {
+		font-size: 30px;
+		margin: 20px 0 0;
+	}
+}
+
+/* -------------------- main -------------------- */
+
+main {
+	margin: 0 auto;
+	padding: 20px 0 88px;
+	position: relative;
+	max-width: 1180px;
+}
+
+@media( max-width: 600px ) {
+	main {
+		padding-bottom: 28px;
+	}
+}
+
+@media( max-width: 1200px ) {
+	main {
+		max-width: 944px;
+	}
+}
+
+@media( max-width: 980px ) {
+	main {
+		max-width: 708px;
+	}
+}
+
+@media( max-width: 740px ) {
+	main {
+		max-width: 472px;
+	}
+}
+
+@media( max-width: 500px ) {
+	main {
+		max-width: calc( 80vw + 52px );
+	}
+}
+
+main section {
+	position: relative;
+}
+
+main header img {
+	width: 60%;
+	max-width: 280px;
+}
+
+/* -------------------- header -------------------- */
+
+section .header {
+	padding: 0;
+	margin: 60px 0 40px;
+}
+
+main section .header h2 {
+	padding: 0;
+	margin: 0 0 0 7px;
+	font-size: 24px;
+}
+
+main section .header .date {
+	font-size: 16px;
+	margin: 0 7px 0 20px;
+	padding: 0;
+}
+
+main section .header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+/* -------------------- gallery -------------------- */
+
+.images {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.images a {
+	margin: 0 7px 32px;
+}
+
+.images img {
+	border: 6px white solid;
+	height: 210px;
+	width: 210px;
+	box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.15);
+}
+
+.images img:hover {
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+}
+
+.images img:active {
+	transform: translate( 2px, 2px );
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);
+}
+
+@media( max-width: 500px ) {
+	section .images img {
+		width: 40vw;
+		height: 40vw;
+	}
+}

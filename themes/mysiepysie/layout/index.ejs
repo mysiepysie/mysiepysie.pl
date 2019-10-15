@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<%- partial('_partial/head', {
+		title: 'Mysie Pysie - Opieka dzienna',
+		font: 'Alegreya+Sans:400i%7CQuicksand:400,500',
+		style: 'styles.css'
+	} ); %>
+	<meta property="og:title" content="Mysie Pysie - Opieka dzienna" />
+	<meta property="og:description" content="Jesteśmy miejscem dla dzieci w wieku od sześciu miesięcy do trzech lat." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://mysiepysie.pl/" />
+	<meta property="og:image" content="https://mysiepysie.pl/images/og_image.jpg" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Mysie Pysie - Opieka dzienna" />
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<a class="navbar-brand" href="#"></a>
+		</div>
+		<ul>
+			<li>
+				<a href="#o-nas" class="about" title="O nas">O nas</a>
+			</li>
+			<li>
+				<a href="#aktualnosci" class="news" title="Aktualności">Aktualności</a>
+			</li>
+			<li>
+				<a href="#plan-dnia" class="schedule" title="Plan dnia">Plan dnia</a>
+			</li>
+			<li>
+				<a href="#galeria" class="gallery" title="Galeria">Galeria</a>
+			</li>
+			<li>
+				<a href="#cennik" class="tariff" title="Cennik">Cennik</a>
+			</li>
+			<li>
+				<a href="#kontakt" class="contact" title="Kontakt">Kontakt</a>
+			</li>
+			<li class="facebook">
+				<a href="https://www.facebook.com/Opieka-dzienna-Mysie-Pysie-109762353694884/"><img src="images/mp_ic_fb_round.svg" alt="Logo Facebooka"></a>
+			</li>
+		</ul>
+		<a href="#" class="hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+	</nav>
+	<header>
+		<div class="inner">
+			<img src="images/mp_logo_big_2.svg" class="logo" alt="Mysie Pysie - Opieka dzienna">
+		</div>
+		<div class="blockquote">
+			<blockquote>
+				<p>"Dzieci&nbsp;-&nbsp;to&nbsp;goście, którzy&nbsp;pytają&nbsp;o&nbsp;drogę"</p>
+				<p class="footer">- przysłowie indyjskie</p>
+			</blockquote>
+		</div>
+	</header>
+	<section class="about" id="o-nas">
+		<div class="about--inner">
+			<h1>O nas</h1>
+			<p class="clarification">
+				Jesteśmy punktem dziennej opieki nad dziećmi w&nbsp;wieku od&nbsp;sześciu miesięcy do&nbsp;trzech&nbsp;lat.
+			</p>
+			<div class="row reverse">
+				<div class="col right description">
+					<h2>Rozwój dziecka</h2>
+					<p>Dbamy o to, aby maluszki rozwijały się w swoim tempie, dlatego organizujemy indywidualnie dopasowane zabawy i zajęcia. Wspieramy dzieci w byciu samodzielnym.</p>
+				</div>
+				<div class="col left image">
+					<img src="images/mp_img_bricks.svg" alt="Wieża zbudowana z kolorowych klocków.">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col left description">
+					<h2>Nasz rozwój</h2>
+					<p>Stale rozwijamy się i poznajemy nowe metody pracy z najmłodszymi.</p>
+				</div>
+				<div class="col right image">
+					<img src="images/mp_img_jigsaw.svg" alt="Kolorowe puzzle.">
+				</div>
+			</div>
+			<div class="row reverse">
+				<div class="col right description">
+					<h2>Opieka nad dziećmi</h2>
+					<p>Chcemy, aby dzieci czuły się jak w domu, miały szansę bawić się, przytulać, otrzymać porcję czułości i bliskości.</p>
+				</div>
+				<div class="col left image">
+					<img src="images/mp_img_bear.svg" alt="Miś maskotka z serduszkiem na brzuszku.">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col left description">
+					<h2>Współpraca z rodzicami</h2>
+					<p>Jesteśmy otwarci na współpracę z rodzicami, odpowiadamy na wszystkie pytania, rozwiewamy wątpliwości, dążymy do porozumienia i ustalenia zasad pracy z dzieckiem w jak najlepszy sposób.</p>
+				</div>
+				<div class="col right image">
+					<img src="images/mp_img_legos.svg" alt="Klockowe ludziki podające sobie dłonie.">
+				</div>
+			</div>
+			<div class="row reverse">
+				<div class="col right description">
+					<h2>Bezpieczeństwo</h2>
+					<p>Nasz żłobek jest miejscem bezpiecznym dla dzieci, wyposażenie, meble i zabawki posiadają wszelkie potrzebne atesty i certyfikaty.</p>
+				</div>
+				<div class="col left image">
+					<img src="images/mp_img_umbrella.svg" alt="Parasolka z zawieszonymi zabawkami.">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="news container" id="aktualnosci">
+		<h1>Aktualności</h1>
+		<div class="row">
+			<% page.posts.slice( 0, 3 ).each( (post) => { %>
+				<%- partial( '_partial/headline', { post: post } ) %>
+			<% }) %>
+		</div>
+		<div class="more">
+			<a href="<%- url_for( 'aktualnosci/' ) %>">Więcej aktualności</a>
+		</div>
+	</div>
+	</section>
+	<section class="schedule" id="plan-dnia">
+		<h1>Plan dnia</h1>
+		<div class="outer">
+			<div class="paws"></div>
+			<div class="content content--7">
+				<div class="timepoint">
+					<h3>7.00 - 8.30</h3>
+					<div class="line"></div>
+					<div class="dot"></div>
+				</div>
+				<h4>Schodzenie się dzieci, zabawy indywidualne</h4>
+				<p>Spontaniczna zabawa swobodna, pozostawienie dzieciom możliwości wyboru i inicjatywy. Praca indywidualna oraz zabawy ruchowe integrujące grupę. Czas na rozmowy rodziców z opiekunami.</p>
+			</div>
+			<div class="content right content--830">
+				<div class="timepoint">
+					<h3>8.30 - 9.00</h3>
+					<div class="line"></div>
+					<div class="dot"></div>
+				</div>
+				<h4>Śniadanie</h4>
+				<p>Przestrzeganie zasad dobrego wychowania podczas spożywania posiłku, ćwiczenie umiejętności posługiwania się sztućcami, mycie zębów. </p>
+			</div>
+			<div class="content content--9">
+				<div class="timepoint">
+					<h3>9.00 - 10.00</h3>
+					<div class="line"></div>
+					<div class="dot"></div>
+				</div>
+				<h4>Zajęcia dydaktyczne</h4>
+				<p>Stymulacja wszechstronnego rozwoju dziecka. Zabawy tematyczne, badawcze i ruchowe z całą grupą i w małych zespołach. Zajęcia plastyczne, muzyczne, z elementami muzykoterapii, parateatralne, logopedyczne, logorytmiczne. Wspieranie działań twórczych.</p>
+			</div>
+			<div class="content right content--10">
+				<div class="timepoint">
+					<h3>10.00 - 10.30</h3>
+					<div class="line"></div>
+					<div class="dot"></div>
+				</div>
+				<h4>Drugie śniadanie - owoce.</h4>
+			</div>
+			<div class="content content--1030">
+				<div class="timepoint">
+					<h3>10.30 - 11.30</h3>
+					<div class="line"></div>
+					<div class="dot"></div>
+				</div>
+				<h4>Pobyt w ogrodzie</h4>
+				<p>Zabawy dowolne i organizowane, rozmowy indywidualne, obserwacje przyrodnicze, spacery. Uczenie zasad bezpieczeństwa dziecka w budynku, w ogrodzie i poza terenem żłobka.</p>
+			</div>
+			<div class="content right content--1130">
+				<div class="timepoint">
+					<h3>11.30 - 12.00</h3>
+					<div class="line"></div>
+					<div class="dot"></div>
+				</div>
+				<h4>Obiad (II danie)</h4>
+				<p>Czynności samoobsługowe i higieniczne przed obiadem, przestrzeganie zasad dobrego wychowania podczas spożywania posiłku, ćwiczenie umiejętności posługiwania się sztućcami.</p>
+			</div>
+			<div class="content content--12">
+				<div class="timepoint">
+					<h3>12.00 - 14.30</h3>
+					<div class="line"></div>
+					<div class="dot"></div>
+				</div>
+				<h4>Leżakowanie</h4>
+				<p>Czynności samoobsługowe - przygotowanie do leżakowania. Leżakowanie: słuchanie literatury dziecięcej, kołysanek, muzyki relaksacyjnej itp.</p>
+			</div>
+			<div class="content right content--1430">
+				<div class="timepoint">
+					<h3>14.30 - 15.00</h3>
+					<div class="line"></div>
+					<div class="dot"></div>
+				</div>
+				<h4>Zupa</h4>
+				<p>Czynności higieniczne, przygotowanie do posiłku. Obiad /zupa/, przestrzeganie zasad dobrego wychowania podczas spożywania posiłku, ćwiczenie umiejętności posługiwania się sztućcami.</p>
+			</div>
+			<div class="content content--15">
+				<div class="timepoint">
+					<h3>15.00 - 16.00</h3>
+					<div class="line"></div>
+					<div class="dot"></div>
+				</div>
+				<h4>Zabawa swobodna</h4>
+				<p>Organizowanie różnorodnych zabaw w sali lub na powietrzu, rozwijanie aktywności dziecka. Praca indywidualna oraz dydaktyczno-wyrównawcza w sali lub w ogrodzie. Zabawy konstrukcyjne, ruchowe, manipulacyjne, wspomagające rozwój mowy.</p>
+			</div>
+			<div class="content right content--16">
+				<div class="timepoint">
+					<h3>16.00 - 16.15</h3>
+					<div class="line"></div>
+					<div class="dot"></div>
+				</div>
+				<h4>Podwieczorek</h4>
+			</div>
+			<div class="content content--1615">
+				<div class="timepoint">
+					<h3>16.15 - 18.00</h3>
+					<div class="line"></div>
+					<div class="dot"></div>
+				</div>
+				<h4>Rozchodzenie się dzieci do domów</h4>
+			</div>
+		</div>
+		<div class="toddlers">
+			<p>Maluszki (od 6. miesiąca do 1 roku życia) karmione są według indywidualnych harmonogramów i&nbsp;wskazań rodziców. Drzemki odbywają się również według indywidualnych potrzeb dzieci.</p>
+		</div>
+		<div class="mouse"></div>
+	</section>
+	<section class="gallery" id="galeria">
+		<h1>Galeria</h1>
+		<div class="images">
+		<% 
+		let gallerySummary = Object.entries( site.pages.data[ 0 ].gallery )
+			.reduce( ( accumulator, [ folder, data ] ) => 
+				accumulator.concat( data.images.map( image => [ folder, image ] ) ),
+				[] )
+			.slice( 0, 10 );
+		for( [ folder, image ] of gallerySummary ) { %>
+			<a data-fslightbox="gallery" href="/galeria/<%- folder %>/<%- image %>"><img class="img" src="/galeria/<%- folder %>/small/<%- image %>" alt="Obraz z galerii zdjęć."></a>
+		<% } %>
+		</div>
+		<div class="more">
+			<a href="/galeria/">Zobacz całą galerię</a>
+		</div>
+	</section>
+	<section class="tariff" id="cennik">
+		<div class="inner">
+			<h1>Cennik</h1>
+			<div class="header">
+				<h3>Wpisowe</h3>
+				<p class="price">300 zł</p>
+			</div>
+			<p class="description">Wpisowe obejmuje ubezpieczenie NNW dziecka, materiały plastyczne, materiały dydaktyczne oraz podstawową wyprawkę.</p>
+			<div class="header">
+				<h3>Opieka całodzienna<span class="upto10h"> (do 10 godzin)</span></h3>
+				<p class="price">1350 zł</p>
+			</div>
+			<div class="header">
+				<h3>Opieka do 5h dziennie</h3>
+				<p class="price">1100 zł</p>
+			</div>
+			<p class="description">Czesne obejmuje zajęcia dydaktyczne i dodatkowe (rytmika, warsztaty plastyczne, kulinarne, zajęcia logopedyczne, dogoterapia), udział w koncertach, teatrzykach, imprezach okolicznościowych, koszt materiałów plastycznych.</p>
+			<div class="header">
+				<h3>Opłata higieniczna</h3>
+				<p class="price">100 zł</p>
+			</div>
+			<p class="description">Opłata obejmuje pieluchy jednorazowe, chusteczki nawilżane, chusteczki higieniczne, pastę do zębów. Rodzice mogą zrezygnować z opłaty i samodzielnie dostarczać potrzebne produkty higieniczne.</p>
+			<div class="header">
+				<h3>Wyżywienie</h3>
+				<p class="price">15 zł/dzień</p>
+			</div>
+			<p class="description">Koszt obejmuje 5 posiłków dziennie (śniadanie, II śniadanie, obiad, zupa, podwieczorek) oraz napoje.</p>
+			<p class="adaptation">Koszt adaptacji ustalany jest indywidualnie.</p>
+		</div>
+	</section>
+	<section class="contact" id="kontakt">
+		<h1>Kontakt</h1>
+		<div class="inner">
+			<div class="data">
+				<h2>Opieka dzienna "Mysie&nbsp;Pysie"</h2>
+				<div class="section">
+					<p>Małgorzata Jasiun</p>
+					<p>ul. Solipska 37b</p>
+					<p>02-482 Warszawa</p>
+				</div>
+				<div class="section">
+					<p>Nr telefonu: 790 320 130</p>
+					<p>Adres e-mail: <a href="mailto:kontakt@mysiepysie.pl">kontakt@mysiepysie.pl</a></p>
+				</div>
+				<div class="section">
+					<p class="hours">Nasz żłobek pracuje od poniedziałku do piątku w&nbsp;godz. 7.00 - 18.00.</p>
+				</div>
+				<div class="section">
+					<p>NIP 5222680452</p>
+					<p>REGON 380581790</p>
+					<p>Nr konta: 88&nbsp;1140&nbsp;2004&nbsp;0000&nbsp;3902&nbsp;7743&nbsp;0075
+				</div>
+				<a class="facebook" href="https://www.facebook.com/Opieka-dzienna-Mysie-Pysie-109762353694884/">
+					Znajdź nas na Facebooku
+				</a>
+			</div>
+			<div class="form">
+				<h2>Formularz kontaktowy</h2>
+					<form>
+						<div>
+							<label for="name">Imię i nazwisko</label>
+							<input type="text" name="name" id="name" required>
+						</div>
+						<div>
+							<label for="email">E-mail</label>
+							<input type="email" name="email" id="email" required>
+						</div>
+						<div class="form-group">
+							<label for="message">Wiadomość</label>
+							<textarea name="message" id="message" required></textarea>
+						</div>
+						<div class="recaptcha">
+							<p>Mysie Pysie korzystają z&nbsp;zabezpieczenia&nbsp;reCAPTCHA<br><a href="https://policies.google.com/privacy?hl=pl">Prywatność</a> - <a href="https://policies.google.com/terms?hl=pl">Warunki</a></p>
+						</div>
+						<button type="submit">Wyślij</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.2835834052635!2d20.904607315795573!3d52.201893879755154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471934cf5397d8e1%3A0x68bd283ed387dc!2sSolipska+37B%2C+Warszawa!5e0!3m2!1spl!2spl!4v1525953318139" style="border:0" allowfullscreen></iframe>
+	</div>
+	<%- partial('_partial/footer') %>
+	<script src="/js/navigation.js"></script>
+	<script src="/js/resize-paws.js"></script>
+	<script src="/lightbox/fslightbox.min.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=6LdeybwUAAAAAG3V_ucEe6pfXFSNvH5XIgbdBLmw"></script>
+	<script src="/js/contact-form.js"></script>
+</body>
+</html>

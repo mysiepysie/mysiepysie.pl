@@ -1,0 +1,14 @@
+---
+title: Opieka dzienna, żłobek, klub malucha
+date: 2019-08-31 23:38:47
+image: opieka-dzienna.jpg
+---
+Rodzice dzieci w wieku od 6 miesięcy do 3 roku życia mają do wyboru kilka opcji w kwestii opieki nad maluchem. Pierwszą jest oczywiście opieka przez jednego z rodziców, wsparta, w miarę możliwości, przez bliskich (szczególnie dziadków). Jednak coraz więcej osób decyduje się na powrót do pracy w czasie między urlopem macierzyńskim a pójściem dziecka do przedszkola. Zapewnienie opieki na czas, kiedy rodzice są w pracy może odbywać się poprzez zatrudnienie niani lub zapisanie dziecka do placówki opiekuńczo-wychowawczej. Jednak i tutaj wybór nie jest prosty. Prawo przewiduje bowiem aż 3 możliwości w instytucjonalnej opiece nad dziećmi: żłobek, klub dziecięcy oraz opiekun dzienny. Wszystkie te opcje opisane są w ustawie o opiece nad dziećmi do lat 3, natomiast ja chciałabym od strony praktycznej opisać różnice między nimi.
+
+Żłobek jest najstarszą formą opieki nad dziećmi prowadzonej w sposób zbiorowy. Do żłobka może uczęszczać dowolna liczba dzieci, jednak powierzchnia sali dziecięcej musi być dostosowana do liczby przebywających w niej dzieci. Ponadto, zatrudniona musi być odpowiednia liczba opiekunów – 8 dzieci na jednego opiekuna w przypadku dzieci od 1 r.ż, oraz 5 dzieci na jednego opiekuna w przypadku dzieci poniżej 1 r.ż. lub dzieci z niepełnosprawnościami.
+
+Klub dziecięcy, potocznie zwany klubem malucha jest bardzo podobny do żłobka, z tym, że w klubie przebywać mogą dzieci w wieku od 1 roku życia, a nie jak w przypadku żłobka, już od 20 tygodnia (ok. 6 miesiąca). Ponadto, jeden klub może sprawować opiekę nad maksymalnie 30 dzieci. Liczba dzieci przypadających na jednego opiekuna jest identyczna jak w żłobku.
+
+Opiekun dzienny jest formą z założenia najbardziej zbliżoną do opieki domowej. Dzieci nie są zapisane do placówki, a przypisane do konkretnej osoby – opiekuna, który sprawuje nad nimi opiekę. Opiekun dzienny może sprawować opiekę nad 5-ciorgiem dzieci (lub 3-giem poniżej 1 roku życia) lub analogicznie, 8-giem (5-ciorgiem poniżej 1 roku życia), jeśli rodzice wyrażą na to zgodę i opiekun będzie miał dodatkową pomoc. W przypadku dziennego opiekuna, zatem, jedna dorosła osoba ma mniejszą grupę dzieci pod opieką. Ponadto, punkty dziennej opieki mogą być prowadzone w domach, mieszkaniach, a także innych miejscach, w których panują warunki zbliżone do domowych. Dlatego też placówki tego typu są zazwyczaj kameralne – wszystkie dzieci, rodzice i opiekunowie dobrze się znają i dzięki temu czują się bezpieczniej.
+
+Nasz punkt opieki dziennej „Mysie Pysie” jest właśnie takim miejscem – funkcjonujemy w domu jednorodzinnym z ogródkiem, staramy się tworzyć rodzinną atmosferę i indywidualnie podchodzić do każdego dziecka, które jest nam powierzone pod opiekę.

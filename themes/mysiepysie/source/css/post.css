@@ -1,0 +1,156 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+p, label, a, input, textarea, li {
+	font-family: 'Quicksand', sans-serif;
+	color: var( --text-grey );
+	font-weight: 400;
+}
+
+body:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 330px;
+	background-color: var( --pink-light );
+	z-index: 1;
+}
+
+body {
+	background-color: var( --grey-very-light );
+}
+
+.overlay {
+	position: relative;
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.15);
+	width: 860px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border-radius: 8px;
+	z-index: 2;
+}
+
+header .image {
+	height: 330px;
+	background-position: center;
+}
+
+header h1, header p.date, main {
+	max-width: 860px;
+	margin: auto;
+	padding: 0 40px;
+}
+
+header h1 {
+	font-family: 'Quicksand', sans-serif;
+	color: var( --pink-dark );
+	font-weight: 500;
+	font-size: 36px;
+	padding: 80px 100px 0 40px;
+	max-width: 780px;
+	margin: 0;
+}
+
+nav {
+	position: absolute;
+	top: calc( 330px + 80px + 11px );
+	right: 40px;
+	z-index: 1;
+}
+
+header p.date {
+	font-family: 'Quicksand', sans-serif;
+	color: var( --grey-light );
+	font-size: 16px;
+	margin: 15px auto 40px;
+}
+
+main p, main li {
+	font-size: 16px;
+	line-height: 24px;
+	margin: 16px 0;
+}
+
+main {
+	padding-bottom: 40px;
+}
+
+@media( max-width: 880px ) {
+	body {
+		background-color: white;
+	}
+
+	.overlay {
+		box-shadow: none;
+		width: 100%;
+	}
+
+	main {
+		padding-bottom: 0;
+	}
+}
+
+@media( max-width: 440px ) {
+	nav {
+		top: calc( 75vw + 40px + 11px );
+	}
+
+	header h1 {
+		padding-top: 40px;
+	}
+	
+	header .image {
+		height: 75vw;
+	}
+}
+
+/* -------------------- prevNext -------------------- */
+
+.prevNext {
+	max-width: 880px;
+	margin: 60px auto 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media( max-width: 880px ) {
+	.prevNext {
+		margin-top: 60px;
+	}
+}
+
+.prevNext a {
+	display: block;
+	height: 24px;
+	padding-top: 3px;
+	font-size: 16px;
+	font-weight: 500;
+	color: var( --blue-dark );
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	flex-basis: 50%;
+}
+
+.prevNext a.prev {
+	background: url( "/images/mp_ic_arrow_left.svg" ) no-repeat;
+	background-position: left center;
+	margin-right: 20px;
+	margin-left: 10px;
+	padding-left: 24px;
+}
+
+.prevNext a.next {
+	background: url( "/images/mp_ic_arrow_right.svg" ) no-repeat;
+	background-position: right center;
+	text-align: right;
+	margin-left: 20px;
+	margin-right: 10px;
+	padding-right: 24px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<%- partial('_partial/head', {
+		title: 'Aktualności - Mysie Pysie - Opieka dzienna',
+		font: 'Quicksand:400,500',
+		style: 'archive.css'
+	} ); %>
+	<meta property="og:title" content="Aktualności - Mysie Pysie - Opieka dzienna" />
+	<meta property="og:description" content="Jesteśmy miejscem dla dzieci w wieku od sześciu miesięcy do trzech lat." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://mysiepysie.pl/aktualnosci/" />
+	<meta property="og:image" content="https://mysiepysie.pl/images/og_image.jpg" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Mysie Pysie - Opieka dzienna" />
+</head>
+<body>
+	<nav>
+		<div class="close">
+			<a href="/#aktualnosci">
+				<img src="/images/mp_ic_x_thick.svg" class="close" alt="X">
+			</a>
+		</span>
+	</nav>
+	<main>
+		<header>
+			<img src="/images/mp_mouse_news.svg" class="logo" alt="Aktualności Mysiów Pysiów">
+			<h1>Aktualności Mysiów&nbsp;Pysiów</h1>
+		</header>
+		<section>
+			<% page.posts.each( (post) => { %>
+				<%- partial( '_partial/headline', { post: post } ) %>
+			<% }) %>
+		</section>
+	</main>
+	<%- partial('_partial/footer') %>
+</body>
+</html>

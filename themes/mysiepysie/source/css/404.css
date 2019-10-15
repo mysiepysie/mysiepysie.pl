@@ -1,0 +1,52 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1, p, a {
+	font-family: 'Quicksand', sans-serif;
+}
+
+img {
+	display: block;
+	margin: 7vw auto 0;
+}
+
+h1 {
+	color: var( --pink-dark );
+	font-weight: 500;
+	font-size: 36px;
+	text-align: center;
+	margin: 40px 0;
+}
+
+p {
+	color: var( --text-grey );
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+}
+
+a {
+	display: block;
+	color: var( --pink-dark );
+	font-weight: 500;
+	font-size: 24px;
+	color: white;
+	background-color: var( --pink-dark );
+	text-decoration: none;
+	height: 34px;
+	padding: 15px 50px;
+	margin: 40px auto 7vw;
+	border-radius: 32px;
+	width: 300px;
+	text-align: center;
+}
+
+@media( max-width: 404px ) {
+	a {
+		font-size: 21px;
+		padding: 14px 0 10px;
+		width: 290px;
+	}
+}

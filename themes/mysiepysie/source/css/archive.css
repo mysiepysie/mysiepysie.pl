@@ -1,0 +1,145 @@
+body {
+	padding: 20px 0 0;
+	background-color: var( --pink-light );
+	margin: 0;
+}
+
+h1, h2 {
+	font-family: 'Quicksand', sans-serif;
+	color: var( --pink-dark );
+	font-weight: 500;
+}
+
+p, a {
+	font-family: 'Quicksand', sans-serif;
+	color: var( --text-grey );
+	font-weight: 400;
+}
+nav {
+	position: absolute;
+	right: 20px;
+	z-index: 1;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 36px;
+	padding: 0 20px;
+	margin: 40px 0 20px;
+	text-align: center;
+}
+
+@media( max-width: 466px ) {
+	h1 {
+		font-size: 30px;
+		margin: 20px 0 0;
+	}
+}
+
+/* -------------------- main -------------------- */
+
+main {
+	margin: 0 auto;
+	padding: 20px 0 120px;
+	position: relative;
+	max-width: 1200px;
+}
+
+@media( max-width: 600px ) {
+	main {
+		padding-bottom: 60px;
+	}
+}
+
+@media( max-width: 1230px ) {
+	main {
+		max-width: 800px;
+	}
+}
+
+section {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: flex-start;
+}
+
+@media( max-width: 800px ) {
+	section {
+		justify-content: center;
+	}
+}
+
+main header img {
+	width: 60%;
+	max-width: 280px;
+}
+
+/* -------------------- news -------------------- */
+
+
+.item {
+	width: 380px;
+	background-color: white;
+	border-radius: 8px;
+	margin: 40px 10px 0;
+	text-align: left;
+	box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.15);
+}
+
+.item:hover {
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2)
+}
+
+.item:active {
+	transform: translate( 2px, 2px );
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1)
+}
+
+.item img {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	display: block;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.item-description {
+	padding: 28px 20px;
+}
+
+.item a {
+	text-decoration: none;
+}
+
+.item-description p {
+	font-size: 16px;
+	line-height: 24px;
+	margin: 28px 0 0;
+	padding: 0;
+}
+
+.item-description .date {
+	color: var( --grey-light );
+	margin-top: 8px;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+@media( max-width: 400px ) {
+	.item {
+		width: 90%;
+	}
+
+	.item img {
+		width: 100%;
+	}
+}

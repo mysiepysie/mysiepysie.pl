@@ -1,0 +1,10 @@
+<div class="item">
+	<a href="<%- url_for(post.path) %>">
+		<img class="img" src="/images/posts/small/<%= post.image %>" alt="<%- post.title %>">
+		<div class="item-description">
+			<h2><%- post.title %></h2>
+			<p class="date"><%= date( post.date, 'D.MM.YYYY' ) %></p>
+			<p><%- truncate( strip_html( post.content ), { length: 130 } ) %></p>
+		</div>
+	</a>
+</div>

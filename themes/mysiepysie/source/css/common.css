@@ -1,0 +1,59 @@
+:root {
+	--pink-dark: #a43f69;
+	--text-grey: #5e5b5b;
+	--blue-dark: #296d80;
+	--fb-blue: #3c5a99;
+	--grey-very-light: #fcfcfc;
+	--grey-light: #c7c7c7;
+	--pink-light: #f0e7e8;
+	--yellow-light: #f7eed2;
+	--fb-blue-hover: #2d4372;
+	--pink-dark-hover: #9a3b63;
+	--blue-dark-hover: #1d4e5b;
+	--pink-dark-active: #88214c;
+	--success-green: #92af70;
+	--error-red: #e67a6e;
+}
+
+/* -------------------- footer -------------------- */
+
+footer {
+	background-color: var( --pink-dark );
+	min-height: 84px;
+}
+
+footer ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 24px 10px;
+}
+
+footer ul li {
+	text-align: center;
+	padding: 7px 0;
+}
+
+footer ul a {
+	margin: 0 16px;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+footer ul a:hover {
+	text-decoration: underline;
+}
+
+@media( max-width: 500px ) {
+	footer ul {
+		flex-direction: column;
+	}
+
+	footer ul li {
+		padding: 16px 0;
+	}
+}
