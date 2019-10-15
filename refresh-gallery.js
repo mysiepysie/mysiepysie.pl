@@ -78,9 +78,15 @@ function * getImages( folderName ) {
 
 	for( let fileName of dir ) {
 		if( imageRegExp.test( fileName ) ) {
-			yield fileName;
+			yield normalise( fileName );
 		};
 	}
+}
+
+function normalise( fileName ) {
+	return fileName
+		.replace( /\s/g, '-' )
+		.replace( /[^\w-\._]/g, '' );
 }
 
 function updateImages( dataImages, folderImages ) {

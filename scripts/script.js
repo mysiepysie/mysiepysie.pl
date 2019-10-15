@@ -31,17 +31,23 @@ function resizeGallery() {
 
 			for( let image of images ) {
 				if( imageRegExp.test( image ) ) {
-					hexo.route.set( path.join( 'galeria', gallery.name, 'small', image ), () =>
+					hexo.route.set( path.join( 'galeria', gallery.name, 'small', normalise( image ) ), () =>
 						resize( path.join( galleryDir, gallery.name, image ), 210, 210 ) 
 					);
 
-					hexo.route.set( path.join( 'galeria', gallery.name, image ), () =>
+					hexo.route.set( path.join( 'galeria', gallery.name, normalise( image ) ), () =>
 						resizeInside( path.join( galleryDir, gallery.name, image ), 1024, 1024 ) 
 					);					
 				};
 			}
 		};
 	}
+}
+
+function normalise( fileName ) {
+	return fileName
+		.replace( /\s/g, '-' )
+		.replace( /[^\w-\._]/g, '' );
 }
 
 function resize( filePath, width, height ) {
@@ -54,6 +60,8 @@ function resize( filePath, width, height ) {
 			position: sharp.strategy.entropy
 		} )
 		.withMetadata( { orientation: 1 } )
+		.jpeg( { progressive: true, force: false } )
+		.png( { progressive: true, force: false } )
 		.toBuffer()
 		.catch( err => console.error( err ) );
 }
@@ -67,6 +75,8 @@ function resizeInside( filePath, width, height ) {
 			fit: sharp.fit.inside,
 		} )
 		.withMetadata( { orientation: 1 } )
+		.jpeg( { progressive: true, force: false } )
+		.png( { progressive: true, force: false } )
 		.toBuffer()
 		.catch( err => console.error( err ) );
 }
