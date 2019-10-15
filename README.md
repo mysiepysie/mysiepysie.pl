@@ -17,7 +17,7 @@ npm install hexo-cli -g
 ```
 hexo server
 ```
-2. Otwórzy `localhost:4000` w przeglądarce
+2. Otwórzy `localhost:4000` w przeglądarce.
 
 3. Żeby przerwać podgląd wciśnij `Ctrl`+`C`.
 
@@ -43,7 +43,7 @@ lub ręcznie stwórzy plik `<nazwa pliku z artykułem>.md` w katalogu `source/_p
 
 1. Dodaj folder z plikami do galerii do `source/galeria`.
 
-2. Uruchom w terminalu 
+2. Uruchom w terminalu:
 ```
 node refresh-gallery.js
 ```
@@ -61,5 +61,5 @@ node refresh-gallery.js
 ```
 node deploy.js
 ```
-2. Odczekaj kilkanaście sekund
-3. Sprawdź `mysiepysie.pl` czy zawiera odświerzoną zawartość
+2. Odczekaj kilkanaście sekund.
+3. Sprawdź [mysiepysie.pl](https://mysiepysie.pl) czy zawiera odświerzoną zawartość.
