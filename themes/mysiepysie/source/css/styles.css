@@ -364,7 +364,7 @@ section.about p.clarification {
 	}
 }
 
-section.about p.holidays {
+section.about .alert {
 	text-align: center;
 	margin: 0 auto;
 	font-size: 16px;
@@ -375,8 +375,17 @@ section.about p.holidays {
 	box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.15);
 }
 
+section.about .alert p {
+	max-width: 420px;
+	margin: 0 auto;
+}
+
+section.about .alert a {
+	color: var(--blue-dark);
+}
+
 @media( max-width: 740px ) {
-	section.about p.holidays {
+	section.about .alert {
 		margin: 0 20px;
 	}
 }
