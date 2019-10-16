@@ -25,6 +25,10 @@ section {
 	position: relative;
 }
 
+@font-face {
+	font-display: swap;
+}
+
 /* -------------------- nav -------------------- */
 
 nav {
@@ -265,7 +269,7 @@ header blockquote {
 }
 
 header blockquote p {
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Alegreya Sans', serif;
 	font-style: italic;
 	font-size: 32px;
 	color: var( --pink-dark );
@@ -274,7 +278,7 @@ header blockquote p {
 }
 
 header blockquote p.footer {
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Alegreya Sans', serif;
 	font-style: italic;
 	font-size: 24px;
 	color: var( --pink-dark );
