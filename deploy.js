@@ -25,7 +25,7 @@ execute( `git commit -m "${ getCommitName() }"`, 'public' );
 execute( `git push origin master`, 'public' );
 
 execute( 'git checkout master' );
-execute( 'git git pull origin master' );
+execute( 'git pull origin master' );
 execute( 'git add .' );
 execute( `git commit -m "${ getCommitName() }"` );
 execute( `git push origin master` );
