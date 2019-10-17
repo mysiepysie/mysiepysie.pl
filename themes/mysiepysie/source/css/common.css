@@ -15,6 +15,10 @@
 	--error-red: #e67a6e;
 }
 
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
 /* -------------------- footer -------------------- */
 
 footer {
