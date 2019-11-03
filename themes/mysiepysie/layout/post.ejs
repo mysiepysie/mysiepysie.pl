@@ -6,6 +6,7 @@
 		font: 'Quicksand:400,500',
 		style: 'post.css'
 	} ); %>
+	<link rel="canonical" href="https://mysiepysie.pl/<%= page.path %>" />
 	<meta property="og:title" content="<%= page.title %> - Mysie Pysie - Opieka dzienna" />
 	<meta property="og:description" content="<%- truncate( strip_html( page.content ), { length: 130 } ) %>" />
 	<meta property="og:type" content="article" />
