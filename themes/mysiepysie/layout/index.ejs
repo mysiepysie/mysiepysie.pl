@@ -67,11 +67,13 @@
 			<p class="clarification">
 				Jesteśmy punktem dziennej opieki nad dziećmi w&nbsp;wieku od&nbsp;sześciu miesięcy do&nbsp;trzech&nbsp;lat.
 			</p>
+			<% console.log( config.alert ); if ( config.alert ) { %>
 			<div class="alert">
 				<p>
-					<strong>Promocja!</strong> Każdy, kto do 4 listopada wyśle wypełnioną <a href="/pdf/karta-zgloszenia.pdf">kartę zgłoszenia dziecka</a> otrzyma zniżkę na wpisowe w wysokości 50%. Zapraszamy do <a href="#kontakt">kontaktu</a>!
+					<%- config.alert %>
 				</p>
 			</div>
+			<% } %>
 			<div class="row reverse">
 				<div class="col right description">
 					<h3>Rozwój dziecka</h3>
@@ -240,9 +242,9 @@
 	<section class="gallery" id="galeria">
 		<h2>Galeria</h2>
 		<div class="images">
-		<% 
+		<%
 		let gallerySummary = Object.entries( site.pages.data[ 0 ].gallery )
-			.reduce( ( accumulator, [ folder, data ] ) => 
+			.reduce( ( accumulator, [ folder, data ] ) =>
 				accumulator.concat( data.images.map( image => [ folder, image ] ) ),
 				[] )
 			.slice( 0, 10 );
