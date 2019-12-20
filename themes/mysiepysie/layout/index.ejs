@@ -2,7 +2,7 @@
 <html lang="pl-PL">
 <head>
 	<%- partial('_partial/head', {
-		title: 'Żłobek Warszawa Włochy, Ursus - Opieka dzienna - Mysie Pysie',
+		title: 'Żłobek Warszawa Włochy, Ursus 🐭 Opieka dzienna 🐭 Mysie Pysie',
 		font: 'Alegreya+Sans:400i%7CQuicksand:400,500',
 		style: 'styles.css'
 	} ); %>
@@ -63,15 +63,17 @@
 	</header>
 	<section class="about" id="o-nas">
 		<div class="about--inner">
-			<h1>Mysie&nbsp;Pysie - opieka&nbsp;dzienna <span class="subtitle">Warszawa Włochy/Ursus</span></h1>
+			<h1>Opieka&nbsp;dzienna - kameralny&nbsp;żłobek <span class="subtitle">Warszawa Włochy/Ursus</span></h1>
 			<p class="clarification">
-				Jesteśmy punktem dziennej opieki nad dziećmi w&nbsp;wieku od&nbsp;sześciu miesięcy do&nbsp;trzech&nbsp;lat.
+				Jesteśmy żłobkiem działającym w&nbsp;formie dziennej opieki (nr&nbsp;pozycji <a href="https://empatia.mpips.gov.pl/web/piu/dla-swiadczeniobiorcow/rodzina/d3/wykaz-dziennych-opiekunow">rejestru</a>&nbsp;8331/O).
 			</p>
+			<% console.log( config.alert ); if ( config.alert ) { %>
 			<div class="alert">
 				<p>
-					<strong>Promocja!</strong> Każdy, kto do 4 listopada wyśle wypełnioną <a href="/pdf/karta-zgloszenia.pdf">kartę zgłoszenia dziecka</a> otrzyma zniżkę na wpisowe w wysokości 50%. Zapraszamy do <a href="#kontakt">kontaktu</a>!
+					<%- config.alert %>
 				</p>
 			</div>
+			<% } %>
 			<div class="row reverse">
 				<div class="col right description">
 					<h3>Rozwój dziecka</h3>
@@ -92,8 +94,8 @@
 			</div>
 			<div class="row reverse">
 				<div class="col right description">
-					<h3>Opieka nad dziećmi</h3>
-					<p>Chcemy, aby dzieci czuły się jak w domu, miały szansę bawić się, przytulać, otrzymać porcję czułości i bliskości.</p>
+					<h3>Rodzinna atmosfera</h3>
+					<p>Dzięki małym, kilkuosobowym grupom dzieci mają szansę otrzymać porcję czułości, bliskości, bawić się i przytulać.</p>
 				</div>
 				<div class="col left image">
 					<img src="images/mp_img_bear.svg" alt="Miś maskotka z serduszkiem na brzuszku.">
@@ -240,9 +242,9 @@
 	<section class="gallery" id="galeria">
 		<h2>Galeria</h2>
 		<div class="images">
-		<% 
+		<%
 		let gallerySummary = Object.entries( site.pages.data[ 0 ].gallery )
-			.reduce( ( accumulator, [ folder, data ] ) => 
+			.reduce( ( accumulator, [ folder, data ] ) =>
 				accumulator.concat( data.images.map( image => [ folder, image ] ) ),
 				[] )
 			.slice( 0, 10 );
