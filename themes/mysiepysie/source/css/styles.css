@@ -249,16 +249,16 @@ header .logo {
 
 header .blockquote {
 	position: absolute;
-	height: 182px;
+	height: 150px;
 	width: 100%;
-	bottom: -32px;
+	bottom: -75px;
 	margin-bottom: 0;
 }
 
 header blockquote {
 	position: relative;
 	width: 700px;
-	height: 182px;
+	height: 150px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -274,16 +274,7 @@ header blockquote p {
 	font-size: 32px;
 	color: var( --pink-dark );
 	margin-top: 0;
-	margin-bottom: 8px;
-}
-
-header blockquote p.footer {
-	font-family: 'Alegreya Sans', serif;
-	font-style: italic;
-	font-size: 24px;
-	color: var( --pink-dark );
-	padding: 0;
-	margin: 0;
+	margin-bottom: 0;
 }
 
 @media ( max-width: 706px ) {
@@ -292,7 +283,7 @@ header blockquote p.footer {
 	}
 	header blockquote {
 		position: relative;
-		height: 182px;
+		height: 150px;
 		margin: 0;
 		width: 100%;
 		margin: 0;
@@ -302,16 +293,12 @@ header blockquote p.footer {
 	header blockquote p {
 		font-size: 28px;
 	}
-
-	header blockquote .footer {
-		font-size: 22px;
-	}
 }
 
 /* -------------------- about -------------------- */
 
 h1 {
-	padding: 60px 10px 30px;
+	padding: 90px 10px 30px;
 }
 
 h1 .subtitle {
