@@ -71,3 +71,8 @@ deploy:
 
 sitemap:
   template: ./sitemap_template.xml
+
+css_minifier:
+  enable: true
+  exclude:
+    - '*.min.css'
