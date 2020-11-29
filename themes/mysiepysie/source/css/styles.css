@@ -617,11 +617,13 @@ section.team p {
 		width: auto;
 		padding: 10px;
 		font-size: 14px;
-    	line-height: 23px;
+		line-height: 23px;
+		text-align: left;
 	}
 
 	section.team .person, section.team .person:nth-child(3) {
 		height: 720px;
+		text-align: center;
 		min-width: auto;
 	}
 
