@@ -564,7 +564,7 @@ section.team .person {
 }
 
 section.team .person:nth-child(3), section.team .person:nth-child(4) {
-	height: 770px;
+	height: 820px;
 }
 
 @media( max-width: 970px ) {
@@ -596,6 +596,45 @@ section.team p {
 	font-size: 16px;
 	line-height: 24px;
 	width: 400px;
+}
+
+@media( max-width: 400px ) {
+	section.team {
+		background: url("../images/team-background-90.svg");
+	}
+
+	section.team h2 {
+		padding-bottom: 22px;
+	}
+
+	section.team h3 {
+		width: auto;
+		padding: 10px;
+		margin: 0;
+	}
+
+	section.team p {
+		width: auto;
+		padding: 10px;
+		font-size: 14px;
+    	line-height: 23px;
+	}
+
+	section.team .person, section.team .person:nth-child(3) {
+		height: 720px;
+		min-width: auto;
+	}
+
+	section.team .person:nth-child(4) {
+		height: 765px;
+	}
+
+	section.team img {
+		border-radius: 180px;
+		width: 360px;
+		height: 360px;
+		margin-top: 20px;
+	}
 }
 
 /* -------------------- schedule -------------------- */
