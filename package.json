@@ -18,7 +18,7 @@
     "hexo-renderer-marked": "^3.3.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
-    "moment": "^2.29.0",
+    "moment": "^2.29.2",
     "sharp": "^0.30.5",
     "yaml": "^1.10.0"
   }
